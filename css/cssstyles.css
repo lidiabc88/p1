@@ -4,10 +4,77 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
+  color: #111827;
 }
+
+/* CABECERA */
+.site-header {
+  padding: 2.5rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.name {
+  display: block;
+  font-size: 4rem;
+  color: red;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+}
+
+
+.role {
+  display: block;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* LINKS */
+.header-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.header-right a:hover {
+  color: #2563eb;
+}
+
+/* CABECERA RESPONSIVE */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-right a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+
+/* HERO */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -41,11 +108,14 @@ body {
   text-decoration: none;
   border-radius: 5px;
 }
+
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 3rem;
   }
 }
+
+/* PROYECTOS */
 .projects {
   padding: 4rem 2rem;
   background: #ffffff;
@@ -86,9 +156,9 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
+
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
