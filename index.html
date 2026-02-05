@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lidia Barnes Calancha</title>
   <link rel="stylesheet" href="css/cssstyles.css" />
 </head>
+
 <body>
 
   <!-- CABECERA -->
@@ -31,13 +33,13 @@
         Formación práctica y tecnologías actuales
         para crear proyectos reales.
       </p>
-      <a href="#contact" class="btn-primary">Contacta</a>
+      <a href="#about" class="btn-primary">Conoce mi trabajo</a>
     </div>
   </section>
 
   <!-- SOBRE MÍ -->
-     <section id="about" class="about">
-  <h2>Sobre mí</h2>
+  <section id="about" class="about">
+    <h2>Sobre mí</h2>
 
     <div class="about-content">
 
@@ -81,7 +83,7 @@
       </div>
 
     </div>
-</section>
+  </section>
 
 
   <!-- PROYECTOS -->
@@ -127,8 +129,43 @@
 
     </div>
   </section>
-  <footer>
-    Lidia Barnes Calancha &copy;2025
-  </footer>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+
+    <div class="contact-text">
+      <h3>Si tienes cualquier duda o simplemente quieres hablar conmigo. ¡Escríbeme!</h3>
+    </div>
+
+    <form class="contact-form" action="" method="post">
+      <div class="form-field">
+        <label for="name">Nombre:</label>
+        <input id="name" class="contact-name" type="text" name="name" placeholder="Nombre">
+      </div>
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input id="email" class="contact-email" type="email" name="email" placeholder="Email">
+      </div>
+      <div class="form-field">
+        <label for="message">Nombre:</label>
+        <textarea id="message" class="contact-message" name="message" placeholder="Escribe aquí tu mensaje"></textarea>
+      </div>
+      <!--
+      <div class="contact-error-submit">
+        <div class="form-error">
+          <div class="form-error-name">Por favor introduzca su nombre.</div>
+          <div class="form-error-email">Por favor introduzca su email.</div>
+          <div class="form-error-message">Por favor introduzca su mensaje.</div>
+        </div> -->>
+
+      <button id="form-submit" class="contact-form-submit" type="button">Enviar</button>
+      </div>
+    </form>
+
+    <footer>
+      Lidia Barnes Calancha &copy;2025
+    </footer>
 </body>
+
 </html>
