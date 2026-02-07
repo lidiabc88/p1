@@ -42,7 +42,7 @@ body {
   position: relative;
 }
 
-/*hover */
+/*hover del menú*/
 .header-right a::after {
   content: "";
   position: absolute;
@@ -91,6 +91,7 @@ body {
   margin-bottom: 2rem;
   color: #555;
 }
+/*primer botón */
 
 .btn-primary {
   display: inline-block;
@@ -203,7 +204,8 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  width: 100%;
 }
  .form-field {
   display: flex;
@@ -231,11 +233,19 @@ body {
   resize: vertical;
 
 }
+/* Quitar el azul por defecto del formulario*/
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+}
+
+/*botón enviar*/
 .contact-form-submit {
-  align-self: center;
-  width: max-content;
-  padding: 0.5rem 20.6rem; 
-  font-size: 1rem;
+  width: 100%;
+  padding: 0.75rem; 
+  font-size: medium;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -246,17 +256,34 @@ body {
 .contact-form-submit:hover {
   background: #d81ea0;
 }
-/*
-.contact-form-error {
+/*BOTÓN ARRIBA*/ 
 
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #d3a5c7;
+  color: white;
+  cursor: pointer;
+  display: none; /* para que solo se vea al hacer scroll */
+  z-index: 1000;
 }
+
+.scroll-top:hover {
+  background-color: #d81ea0;
+}
+
 
 /* RESPONSIVE */
 
-/* --- Mobile --- */
+/* Móviles */
 @media (max-width: 767px) {
 
-  /* About Section */
+  /* Sobre mí Sección */
   .about-content {
     padding: 0 1rem;
   }
@@ -270,7 +297,7 @@ body {
     gap: 2rem;
   }
 
-  /* Header */
+  /* Header Sección*/
   .header-container {
     flex-direction: column;
     align-items: flex-start;
@@ -284,7 +311,7 @@ body {
   }
 }
 
-/* --- Escritorio --- */
+/* Escritorio */
 @media (min-width: 768px) {
 
   /* Hero Section */
@@ -292,12 +319,12 @@ body {
     font-size: 3rem;
   }
 
-  /* Projects Section */
+  /* Proyectos Sección */
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   
   }
-  /*--- FOOTER ---*/
+  /* FOOTER */
   footer {
   display: flex;
   justify-content: center;

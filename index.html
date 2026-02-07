@@ -10,7 +10,7 @@
 
 <body>
 
-  <!-- CABECERA -->
+  <!---- CABECERA -->
   <header class="header">
     <div class="header-container">
 
@@ -133,40 +133,42 @@
   <!-- CONTACTO -->
   <section id="contact" class="contact">
     <div class="contact-card">
-    <h2>Contacto</h2>
+      <h2>Contacto</h2>
 
-    <div class="contact-text">
-      <h3>Si tienes cualquier duda o simplemente quieres hablar conmigo. ¡Escríbeme!</h3>
-    </div>
+      <div class="contact-text">
+        <h3>Si tienes cualquier duda o simplemente quieres hablar conmigo. ¡Escríbeme!</h3>
+      </div>
 
-    <form class="contact-form" action="" method="post">
-      <div class="form-field">
-        <label for="name">Nombre:</label>
-        <input id="name" class="contact-name" type="text" name="name" placeholder="Nombre">
-      </div>
-      <div class="form-field">
-        <label for="email">Email:</label>
-        <input id="email" class="contact-email" type="email" name="email" placeholder="Email">
-      </div>
-      <div class="form-field">
-        <label for="message">Mensaje:</label>
-        <textarea id="message" class="contact-message" name="message" placeholder="Escribe aquí tu mensaje"></textarea>
-      </div>
-      <!--
-      <div class="contact-error-submit">
-        <div class="form-error">
-          <div class="form-error-name">Por favor introduzca su nombre.</div>
-          <div class="form-error-email">Por favor introduzca su email.</div>
-          <div class="form-error-message">Por favor introduzca su mensaje.</div>
-        </div> -->
-
-      <button id="form-submit" class="contact-form-submit" type="button">Enviar</button>
-    </form>
+      <form class="contact-form" action="" method="post">
+        <div class="form-field">
+          <label for="name">Nombre:</label>
+          <input id="name" class="contact-name" type="text" name="name" placeholder="Nombre">
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input id="email" class="contact-email" type="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-field">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" class="contact-message" name="message"
+            placeholder="Escribe aquí tu mensaje"></textarea>
+        </div>
+        <button id="form-submit" class="contact-form-submit" type="submit">Enviar</button>
+        <p id="form-message"></p>
+        
+      </form>
+      
     </div>
   </section>
-    <footer>
-      Lidia Barnes Calancha &copy;2025
-    </footer>
+
+  <!-- BOTÓN SCROLL -->
+  <button id="scrollTop" class="scroll-top" > &#128314 </button>
+
+  <!-- FOOTER -->
+  <footer>
+    Lidia Barnes Calancha &copy;2025
+  </footer>
+  <script src="contact.js"></script>
 </body>
 
 </html>
