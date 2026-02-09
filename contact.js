@@ -1,12 +1,13 @@
-// FORMULARIO 
+//  FORMULARIO 
+
 const form = document.querySelector('.contact-form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
 const formMessage = document.getElementById('form-message');
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault(); // para que no recargue la página
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // para que no recargue la página
 
   // limpiar el mensaje
   formMessage.textContent = '';
@@ -20,7 +21,7 @@ form.addEventListener('submit', function (e) {
 
  ) {
 
-    formMessage.textContent = 'Por favor, rellena todos los campos.';
+    formMessage.textContent = '¡Rellena todos los campos!.';
     formMessage.style.color = 'red';
     return;
   }
@@ -39,11 +40,14 @@ form.addEventListener('submit', function (e) {
   // resetear el formulario
   form.reset();
 });
+
+
+
 //BOTÓN ARRIBA
 const scrollButton = document.getElementById('scrollTop');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {   // aparece cuando haces scroll más de 300px
+  if (window.scrollY > 300) {   // aparece cuando haces scroll más de 300px (scrollY cuántos píxeles has bajado desde arriba)
     scrollButton.style.display = 'block';
   } else {
     scrollButton.style.display = 'none';
