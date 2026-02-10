@@ -7,20 +7,19 @@ const messageInput = document.getElementById('message');
 const formMessage = document.getElementById('form-message');
 
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); // para que no recargue la página
-
+ 
   // limpiar el mensaje
   formMessage.textContent = '';
   formMessage.style.color = '';
 
-  // validación
+  // validación de los campos vacíos
   if (
   !nameInput.value.trim() ||
   !emailInput.value.trim() ||
   !messageInput.value.trim()
 
  ) {
-
+    event.preventDefault(); // bloquea si hay error
     formMessage.textContent = '¡Rellena todos los campos!.';
     formMessage.style.color = 'red';
     return;
@@ -28,17 +27,11 @@ form.addEventListener('submit', function (event) {
 
   // email ok
   if (!emailInput.value.includes('@')) {
+    event.preventDefault();
     formMessage.textContent = 'El email no es válido.';
     formMessage.style.color = 'red';
     return;
   }
-
-  // todo ok
-  formMessage.textContent = 'Mensaje enviado ¡Gracias!';
-  formMessage.style.color = 'green';
-
-  // resetear el formulario
-  form.reset();
 });
 
 

@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lidia Barnes Calancha</title>
   <link rel="stylesheet" href="css/cssstyles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,9 +25,9 @@
         <a href="#projects">Proyectos</a>
         <a href="#contact">Contacto</a>
       </nav>
-  <a href="#about" class="menu-avatar">
-  <img src="img/logoOso.png" alt="avatar" title="Grr">
-  </a>
+      <a href="#about" class="menu-avatar">
+        <img src="img/logoOso.png" alt="avatar" title="Grr">
+      </a>
     </div>
   </header>
 
@@ -30,11 +35,7 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>Lidia Barnes Calancha</h1>
-      <h3>Frontend Developer</h3>
-      <p>
-        Formación práctica y tecnologías actuales
-        para crear proyectos reales.
-      </p>
+      <h3>Frontend Developer · Portfolio en desarrollo </h3>
       <a href="#projects" class="btn-primary">Conoce mi trabajo</a>
     </div>
   </section>
@@ -124,7 +125,7 @@
       <article class="project-card">
         <h3>Web bufete abogados</h3>
         <p>
-          Desarrollo de una web de servicios de abogacía.
+          Desarrollo de una web de servicios de abogacía con WordPress.
         </p>
         <a href="https://bufetecriado.com/" target="_blank">Ver proyecto</a>
       </article>
@@ -141,7 +142,7 @@
         <h3>Si tienes cualquier duda o simplemente quieres hablar conmigo. ¡Escríbeme!</h3>
       </div>
 
-      <form class="contact-form" action="" method="post">
+      <form class="contact-form" action="https://formspree.io/f/xpqjqzpe" method="post">
         <div class="form-field">
           <label for="name">Nombre:</label>
           <input id="name" class="contact-name" type="text" name="name" placeholder="Nombre">
@@ -157,10 +158,22 @@
         </div>
         <button id="form-submit" class="contact-form-submit" type="submit">Enviar</button>
         <p id="form-message"></p>
-        
+
       </form>
-      
-    </div>
+
+      <!-- BOTONES RSS --->
+      <div class="contact-media">
+        <p class="contact-media-text">... o si lo prefieres podemos vernos en:</p>
+      <div class="contact-media-icons"> 
+        <a href="https://www.linkedin.com/in/lidia-barnes-c" target="_blank" aria-label="LinkedIn">
+          <img src="img/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://github.com/lidiabc88" target="_blank" aria-label="GitHub">
+          <img src="img/github.svg" alt="GitHub">
+        </a>
+      </div>
+    </di> 
   </section>
 
   <!-- BOTÓN SCROLL -->
@@ -168,7 +181,7 @@
 
   <!-- FOOTER -->
   <footer>
-    Lidia Barnes Calancha &copy;2025
+    Lidia Barnes Calancha &copy;2025 🚧 Portfolio en desarrollo 🚧
   </footer>
   <script src="contact.js"></script>
 </body>
