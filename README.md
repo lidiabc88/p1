@@ -1,7 +1,7 @@
 *Mi primer portfolio*
 
 Portfolio web personal desarrollado con HTML, CSS y JavaScript.
-Incluye información sobre mí, proyectos y un formulario de contacto.
+Incluye información sobre mí, proyectos de mi etapa de prácticas de empresa y un formulario de contacto.
 
  🛠️ Tecnologías usadas:
 - HTML5
